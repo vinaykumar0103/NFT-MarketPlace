@@ -1,5 +1,5 @@
 1) Clone the repository provided in chat type
-	git clone https://github.com/sanjeevan121/NftMarketPlace.git 
+	git clone https://github.com/vinaykumar0103/NFT-MarketPlace
 	in your terminal
 2) install all dependencies in root folder by typing-
 	npm install
