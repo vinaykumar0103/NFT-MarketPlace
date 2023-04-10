@@ -2,25 +2,18 @@ const{expect}=require("chai");
 const { ethers } = require("hardhat");
 
 
-
-
 describe("NFTMarket",function(){
     it("Deploy the Smart contracts on blockchain,mint new nfts,sell a NFT and make transactions on the blockchain",async function(){
         const Market= await ethers.getContractFactory("NFTMarket")
         const market= await Market.deploy()
         await market.deployed()
 
-
         const marketAddress=market.address
        
-
-
         const NFT=await ethers.getContractFactory("NFT")
         const nft=await NFT.deploy(marketAddress)
 
-
         await nft.deployed()
-
 
         const nftContractAddress=nft.address
 

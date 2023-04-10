@@ -5,8 +5,8 @@ import {useRouter} from 'next/router'
 import Web3Modal from'web3modal'
 
 const {create} =require('ipfs-http-client')
-const projectId="2L6HWeyfMfW0DcxJfAFzUFb9YyC"
-const projectSecret="75ad2828394aaa12ddad2a88901d6308"
+const projectId=""
+const projectSecret=""
 
 const auth= "Basic " + Buffer.from(projectId + ":" +projectSecret).toString("base64");
 const client =create({
